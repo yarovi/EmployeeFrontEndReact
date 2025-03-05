@@ -32,7 +32,7 @@ export const EmployeeComponent = () => {
     }
   }, [])
 
-  function saveEmployee(e) {
+  function saveOrUpdateEmployee(e) {
     e.preventDefault();
 
     if (validateForm()) {
@@ -137,7 +137,7 @@ export const EmployeeComponent = () => {
                     onChange={(e) => setEmail(e.target.value)} />
                   {erros.email && <div className='invalid-feedback'>{erros.email}</div>}
                 </div>
-                <button className='btn btn-primary' onClick={saveEmployee}>Save</
+                <button className='btn btn-primary' onClick={saveOrUpdateEmployee}>Save</
                 button>
               </form>
 

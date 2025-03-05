@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import { deleteEmployee, listEmployees } from '../services/EmployeeService'
+import { deleteEmployee, listEmployees, updateEmployee } from '../services/EmployeeService'
 import { useNavigate } from 'react-router-dom'
 const ListEmployeeComponent = () => {
-
   const [employees, setEmployees] = useState([])
   const navigator = useNavigate()
 
@@ -49,6 +48,7 @@ const ListEmployeeComponent = () => {
     }
   ]
 
+  
   function addNewEmployee() {
 
     console.log("Add New Employee")
@@ -60,14 +60,8 @@ const ListEmployeeComponent = () => {
 
     console.log("Update Employee with id: " + id)
 
-    deleteEmployee(id).then((response) => {
-      console.log(response)
-      navigator('/employees')
-    }
-    ).catch((error) => {
-      console.log(error)
-    }
-    )
+    navigator('/edit-employee/' + id)
+  
   }
 
 
