@@ -14,7 +14,9 @@ export const HeaderComponent = () => {
                     </li> */}
                     <li className="nav-item inline">
                       <NavLink to="/employees" className="nav-link">Employees</NavLink>
-                      <NavLink to="/departments" className="nav-link">Departments</NavLink>
+                    </li>
+                    <li className="nav-item inline">
+                    <NavLink to="/departments" className="nav-link">Departments</NavLink>
                     </li>
                 </ul> 
 
