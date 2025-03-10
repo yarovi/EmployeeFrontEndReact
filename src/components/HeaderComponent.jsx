@@ -13,7 +13,7 @@ export const HeaderComponent = () => {
                         <a href="https://javaguides.net" className="nav-link">Employees</a>
                     </li> */}
                     <li className="nav-item inline">
-                      <NavLink to="/add-employee" className="nav-link">Employees</NavLink>
+                      <NavLink to="/employees" className="nav-link">Employees</NavLink>
                       <NavLink to="/departments" className="nav-link">Departments</NavLink>
                     </li>
                 </ul> 
